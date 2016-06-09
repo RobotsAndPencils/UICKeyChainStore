@@ -98,8 +98,8 @@ __OSX_AVAILABLE_STARTING(__MAC_10_9, __IPHONE_4_0);
 
 typedef NS_ENUM(NSInteger, UICKeyChainStoreAuthenticationPolicy) {
     UICKeyChainStoreAuthenticationPolicyUserPresence = kSecAccessControlUserPresence,
-    UICKeyChainStoreAuthenticationPolicyTouchIDAny = kSecAccessControlTouchIDAny,
-    UICKeyChainStoreAuthenticationPolicyTouchIDCurrentSet = kSecAccessControlTouchIDCurrentSet
+    UICKeyChainStoreAuthenticationPolicyTouchIDAny  CF_ENUM_AVAILABLE(NA, 9_0) = kSecAccessControlTouchIDAny,
+    UICKeyChainStoreAuthenticationPolicyTouchIDCurrentSet  CF_ENUM_AVAILABLE(NA, 9_0) = kSecAccessControlTouchIDCurrentSet
 };
 
 @interface UICKeyChainStore : NSObject
